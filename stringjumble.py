@@ -32,9 +32,6 @@ print('You entered "' + a + '". Now jumble it:')
 b = (a[::-1])
 print(b)
 
-c = (split.b[::-1])
-print(c)
-
 
 
 
