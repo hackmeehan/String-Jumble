@@ -32,6 +32,20 @@ print('You entered "' + a + '". Now jumble it:')
 b = (a[::-1])
 print(b)
 
+'''look up how to split sentences into words'''
+
+words = []
+word = " "
+for i in a:
+    if i == ' ':
+        words.append(word)
+        words = " "
+    else:
+        word = word + i
+        
+print(words)
+
+
 
 
 
