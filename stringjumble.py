@@ -39,7 +39,7 @@ word = " "
 for i in a:
     if i == ' ':
         words.append(word)
-        words = " "
+        word = " "
     else:
         word = word + i
         
