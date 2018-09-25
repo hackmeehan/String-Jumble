@@ -26,13 +26,12 @@ ydnah dnif yam uoy taht skcirt ro seuqinhcet wef a era erehT
 handy find may you that tricks or techniques few a are There
 erehT era a wef seuqinhcet ro skcirt taht uoy yam dnif ydnah
 """
-a = str(input('Please enter a string of text (the bigger the better): ' + ' '))
+a = str(input('Please enter a string of text (the bigger the better): '))+(' ')
 print('You entered "' + a + '". Now jumble it:')
 
 b = (a[::-1])
 print(b)
 
-'''look up how to split sentences into words'''
 
 words = []
 word = " "
@@ -42,8 +41,20 @@ for i in a:
         word = " "
     else:
         word = word + i
-print(words[::-1])
+print(''.join(words[::-1]))
 
+
+smiles = []
+smile = " "
+for j in a:
+    if j == ' ':
+        smiles.append(smile)
+        smile = " "
+    else:
+        smile = smile + j
+f = (''.join(smiles[::-1]))
+
+print(' '+ f[::-1])
 
 
 
