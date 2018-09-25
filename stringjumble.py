@@ -29,32 +29,30 @@ erehT era a wef seuqinhcet ro skcirt taht uoy yam dnif ydnah
 a = str(input('Please enter a string of text (the bigger the better): '))+(' ')
 print('You entered "' + a + '". Now jumble it:')
 
-b = (a[::-1])
-print(b)
-
+b = (a[::-1]).strip()
+print(b.lstrip())
 
 words = []
 word = " "
 for i in a:
     if i == ' ':
         words.append(word)
-        word = " "
+        word = ""
     else:
         word = word + i
-print(''.join(words[::-1]))
-
+print(' '.join(words[::-1]))
 
 smiles = []
 smile = " "
 for j in a:
     if j == ' ':
         smiles.append(smile)
-        smile = " "
+        smile = ""
     else:
         smile = smile + j
-f = (''.join(smiles[::-1]))
+f = (' '.join(smiles[::-1]))
 
-print(' '+ f[::-1])
+print(''+ f[::-1])
 
 
 
