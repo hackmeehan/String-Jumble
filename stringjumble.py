@@ -26,6 +26,16 @@ print('You entered "' + a + '". Now jumble it:')
 b = (a[::-1]).strip()
 print(b.lstrip())
 
+smiles = []
+smile = " "
+for j in a:
+    if j == ' ':
+        smiles.append(smile)
+        smile = ""
+    else:
+        smile = smile + j
+f = (' '.join(smiles[::-1]))
+print(''+ f[::-1])
 words = []
 word = " "
 for i in a:
@@ -36,17 +46,7 @@ for i in a:
         word = word + i
 print(' '.join(words[::-1]))
 
-smiles = []
-smile = " "
-for j in a:
-    if j == ' ':
-        smiles.append(smile)
-        smile = ""
-    else:
-        smile = smile + j
-f = (' '.join(smiles[::-1]))
 
-print(''+ f[::-1])
 
 
 
